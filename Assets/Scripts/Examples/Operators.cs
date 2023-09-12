@@ -5,25 +5,28 @@ public class Operators : MonoBehaviour {
     private string playerName;
 
     public void Initialize() {
-        NullChecks(new PlayerData("John Doe"), gameObject);
+        NullChecks(new CreatureData(), gameObject);
     }
 
     // private method
-    private void NullChecks(PlayerData playerData, GameObject playerObject) {
+    private void NullChecks(CreatureData creatureData, GameObject playerObject) {
 
         // Example 1
-        if(playerData != null) {
-            playerName = playerData.name;
+        if(creatureData != null) {
+            playerName = creatureData.name;
         }
-        playerName = playerData?.name;
+        playerName = creatureData?.name;
 
         //Example 2
-        if (playerData != null) {
-            if (playerData.name != null) {
-                playerName = playerData.name;
+        if (creatureData != null) {
+            if (creatureData.name != null) {
+                playerName = creatureData.name;
+                return;
             }
+            playerName = "Unknown";
         }
-        playerName = playerData?.name ?? "Unknown"; // same as above using null conditional and null coalescence operators
+
+        playerName = creatureData?.name ?? "Unknown"; // same as above using null conditional and null coalescence operators
 
         //Example 3
         if (playerName == null) {
@@ -44,11 +47,11 @@ public class Operators : MonoBehaviour {
         }
 
         //Example 6 - null check pattern
-        if (playerData != null && playerData.name != null) {
+        if (creatureData != null && creatureData.name != null) {
             //Do something
         }
 
-        if (playerData is { name: not null }) {
+        if (creatureData is { name: not null }) {
             //Do something
         }
     }
