@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55a716c0ea87ae441a862f37cdb5ee58, type: 3}
+  m_Name: Sword
+  m_EditorClassIdentifier: 
+  itemCategory: {fileID: 11400000, guid: b7fac9853ffff4e4b9b6c0ffc8bb6811, type: 2}
+  itemName: Rusty Sword
+  itemDurability: 3
+  itemValue: 1020
+  itemWeight: 1.23
+  itemAttack: 2
+  itemDefense: 0
+  itemMagicAttack: 0
+  itemMagicDefense: 0
