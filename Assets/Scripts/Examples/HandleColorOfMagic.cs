@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using UnityEditor.Scripting;
 using UnityEngine;
 
 public class HandleColorOfMagic : MonoBehaviour {
