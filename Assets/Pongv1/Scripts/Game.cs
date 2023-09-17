@@ -31,10 +31,15 @@ public class Game : MonoBehaviour {
     private int player1Score;
     private int player2Score;
 
-
     public static Action resetPaddles;
 
 
+    /// <summary>
+    /// Returns the object bounds position based on the render. This works for objects where the bounds closely match the object size.
+    /// </summary>
+    /// <param name="renderer"></param>
+    /// <param name="position"></param>
+    /// <returns></returns>
     public static PongBounds GetBoundsPosition(Renderer renderer, Vector3 position) {
         Vector3 size = renderer.bounds.size;
         PongBounds bounds = new () {
@@ -53,11 +58,15 @@ public class Game : MonoBehaviour {
         var bottomWallHeight = GetBoundsPosition(bottomWall.GetComponent<Renderer>(), bottomWall.transform.position).top;
         var wallsBoundaries = new Vector2(topWallHeight, bottomWallHeight);
 
+        // players are a list. I know that player 1 is at index 0 and player 2 is at index 1 as a convention.
+        // I could have used a dictionary to map the player to the score, but I didn't want to overcomplicate things.
+        // Here I am just setting their starting data
         foreach(var player in players) {
             player.Speed = initialPaddleSpeed;
             player.WallBoundaries = wallsBoundaries;
         }
 
+        // setting start score
         player1ScoreUI.text = player1Score.ToString();
         player2ScoreUI.text = player2Score.ToString();
 
@@ -77,6 +86,7 @@ public class Game : MonoBehaviour {
         CheckScore();
     }
 
+    // I am checking the score based on the ball position vs paddles position. If the ball is behind the paddles + 1m, then the other player scored
     private void CheckScore() {
         if (ball.transform.position.x < players[0].transform.position.x - 1f) {
             Score(player1ScoreUI, player1Score);
@@ -95,6 +105,8 @@ public class Game : MonoBehaviour {
         scoreRef.text = score.ToString();
     }
 
+
+    // function that makes sure the ball will shoot in a random direction
     private void SetRandomBallRotation() {
         var randomAngle = UnityEngine.Random.Range(-45f, 45f);
         var flip = UnityEngine.Random.Range(0, 2);
