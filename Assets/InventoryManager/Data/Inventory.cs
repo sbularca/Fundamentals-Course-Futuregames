@@ -17,7 +17,6 @@ public class Inventory : ScriptableObject {
     public List<ItemData> items;
 
     private ItemData cachedFoundItem;
-    private readonly Item tempItem = CreateInstance<Item>();
 
     public bool HasItem(Item item) {
         foreach (ItemData itemData in items) {
@@ -39,8 +38,4 @@ public class Inventory : ScriptableObject {
         return HasItem(item) ? cachedFoundItem : null;
     }
 
-    public ItemData GetItem(string itemName) {
-        tempItem.itemName = itemName;
-        return GetItem(tempItem);
-    }
 }

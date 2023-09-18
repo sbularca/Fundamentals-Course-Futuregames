@@ -6,8 +6,9 @@ public class CharacterData : ScriptableObject {
     public string characterName;
 
     public Inventory inventory;
+
     [Range(0, 60)]
-    public int level;
+    [SerializeField] int level;
     [Range(0, 1000)]
     public int health;
     [Range(0, 100)]
@@ -28,7 +29,4 @@ public class CharacterData : ScriptableObject {
         inventory.items.Add(itemData);
     }
 
-    private void OnValidate() {
-        characterName = name;
-    }
 }

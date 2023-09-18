@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemCategory: {fileID: 11400000, guid: b7fac9853ffff4e4b9b6c0ffc8bb6811, type: 2}
   itemName: Rusty Sword
-  itemDurability: 3
+  itemDurability: 9
   itemValue: 1020
   itemWeight: 1.23
   itemAttack: 2

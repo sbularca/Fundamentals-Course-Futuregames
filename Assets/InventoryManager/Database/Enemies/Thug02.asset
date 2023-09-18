@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28ea1307794ef4844847e03816311649, type: 3}
-  m_Name: Thug01
+  m_Name: Thug02
   m_EditorClassIdentifier: 
-  characterName: Thug01
+  characterName: Thug02
   inventory: {fileID: 11400000, guid: 359b3e5423ec04340aab72801ba59160, type: 2}
-  level: 32
-  health: 200
-  mana: 7
-  attack: 11
-  defense: 3
+  level: 36
+  health: 533
+  mana: 48
+  attack: 33
+  defense: 0
   magicAttack: 0
-  magicDefense: 2
+  magicDefense: 0
   visionRange: 0
   hasNightVision: 0
