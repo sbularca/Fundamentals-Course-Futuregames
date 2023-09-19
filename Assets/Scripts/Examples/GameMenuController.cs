@@ -4,7 +4,7 @@ using UnityEngine;
 namespace Examples {
     public class GameMenuController : MonoBehaviour {
 
-        [SerializeField] private ConstructorsExample constructorsExample;
+        public ConstructorsExample constructorsExample;
 
         private void Start() {
             Menu.openMenu += OpenSubMenu;

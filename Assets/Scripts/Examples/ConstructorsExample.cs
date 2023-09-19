@@ -4,9 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ConstructorsExample : MonoBehaviour {
-    [SerializeField] private int nrOfLives = 3;
-
-    [SerializeField] private GameMenuController gameMenuController;
+    public int nrOfLives = 3;
 
     private static string test = "test";
     private void Start() {
