@@ -1,7 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+[Serializable]
 public class GameLogicData {
     public static Queue<GameLogicData> gameDataQueue = new Queue<GameLogicData>();
     public static UnityEvent<GameLogicData> gameDataEvent = new UnityEvent<GameLogicData>();

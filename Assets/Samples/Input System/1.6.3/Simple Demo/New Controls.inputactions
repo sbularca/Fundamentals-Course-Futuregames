@@ -1,0 +1,102 @@
+{
+    "name": "New Controls",
+    "maps": [
+        {
+            "name": "gameplay",
+            "id": "02b6da36-3623-4b51-a9be-a46c94e6d842",
+            "actions": [
+                {
+                    "name": "move",
+                    "type": "Button",
+                    "id": "220183d7-d244-42ad-9deb-00166a5af3ff",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "camera",
+                    "type": "Button",
+                    "id": "0ca2e5f3-97d4-4630-b6c9-6260501ab93c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "fire",
+                    "type": "Button",
+                    "id": "5dac3974-5cad-46d6-9bf8-e853560ef897",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "1894b768-d28b-4a99-89d7-ed4772660f3b",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f78c92b0-c739-404d-bd26-4be21ffb30ce",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "camera",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5cf38aaf-bb79-4dc7-903b-7d6cb9ee7c66",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "fire",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "ui",
+            "id": "2dfe1a2a-3c0b-4259-b76a-6947eba23a36",
+            "actions": [
+                {
+                    "name": "navigation",
+                    "type": "Button",
+                    "id": "10734262-dea0-4eb9-854e-b86219de21b8",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "dd07a2a1-6571-4134-89cf-8833f61724a6",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "navigation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
