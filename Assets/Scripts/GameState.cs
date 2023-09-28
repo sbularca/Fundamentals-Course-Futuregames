@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 // game state service
 public class GameState : MonoBehaviour {
+
     public static GameState instance;
     private GameSettings gameSettings;
 
@@ -18,7 +19,7 @@ public class GameState : MonoBehaviour {
 
             //we proceed with other initializations here
             LoadSettings();
-            LoadMainMenu();
+            //LoadMainMenu();
             return;
         }
         LogGameState("Duplicate instance instantiated, destroying...");
@@ -27,6 +28,7 @@ public class GameState : MonoBehaviour {
     }
 
     private void Awake() {
+        Initialize();
         // we subscribe to this default unity event
         SceneManager.sceneLoaded += OnSceneLoaded;
     }

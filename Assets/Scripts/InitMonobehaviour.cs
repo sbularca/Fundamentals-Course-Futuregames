@@ -3,6 +3,8 @@ using UnityEngine;
 public class InitMonobehaviour : MonoBehaviour{
 
     [SerializeField] private GameState gameStatePrefab;
+
+    [SerializeField] private int variableName;
     // Standard way of initializing the game
     private void Awake() {
         // initialize the network service
@@ -20,7 +22,7 @@ public class InitMonobehaviour : MonoBehaviour{
     }
 
     private void LoadGameState() {
-        var gameState = Instantiate(gameStatePrefab);
+            var gameState = Instantiate(gameStatePrefab);
         gameState.Initialize();
     }
     private void LoadeNetworkService() {

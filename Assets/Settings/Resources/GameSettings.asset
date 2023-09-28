@@ -15,5 +15,5 @@ MonoBehaviour:
   mainMenuSceneName: MainMenu
   gameLevelsNames:
   - Level01
-  isGamePaused: 0
+  isGamePaused: 1
   isLevelRuning: 0
