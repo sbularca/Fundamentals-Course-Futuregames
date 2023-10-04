@@ -1,0 +1,5 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/base.uss?fileID=7433441132597879392&amp;guid=95b272d2ce9541546a8b8c5558d87170&amp;type=3#base" />
+    <ui:Label tabindex="-1" text="Title" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Title" class="header" style="align-self: stretch; align-items: auto; justify-content: space-around; -unity-text-align: upper-center; -unity-font-style: bold; font-size: 20px; position: relative;" />
+    <ui:Button text="Click me if you dare" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Button1" class="button_main" />
+</ui:UXML>
