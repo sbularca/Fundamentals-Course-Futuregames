@@ -1,8 +1,6 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
+using UnityEditor;
 
 public class Entrypoint : MonoBehaviour {
     [SerializeField] public Transform playerPrefab;
@@ -26,40 +24,36 @@ public class Entrypoint : MonoBehaviour {
         });
     }
 }
+//
+// [CustomEditor(typeof(SomeScript))]
+// public class SomeScriptEditor : Editor
+// {
+//     public override void OnInspectorGUI()
+//     {
+//         DrawDefaultInspector();
+//
+//         EditorGUILayout.HelpBox("This is a help box", MessageType.Info);
+//     }
+// }
 
-using UnityEngine;
-using System.Collections;
-using UnityEditor;
-
-[CustomEditor(typeof(SomeScript))]
-public class SomeScriptEditor : Editor
-{
-    public override void OnInspectorGUI()
-    {
-        DrawDefaultInspector();
-
-        EditorGUILayout.HelpBox("This is a help box", MessageType.Info);
-    }
-}
-
-using UnityEditor;
-using UnityEditor.UIElements;
-using UnityEngine.UIElements;
-
-[CustomEditor(typeof(Car))]
-public class Car_Inspector : Editor
-{
-    public override VisualElement CreateInspectorGUI()
-    {
-        var root = new VisualElement();
-
-        var label = new Label("This is a label");
-        root.Add(label);
-
-        var button = new Button(() => Debug.Log("Button pressed"));
-        button.text = "Click me";
-        root.Add(button);
-
-        return root;
-    }
-}
+// using UnityEditor;
+// using UnityEditor.UIElements;
+// using UnityEngine.UIElements;
+//
+// [CustomEditor(typeof(Car))]
+// public class Car_Inspector : Editor
+// {
+//     public override VisualElement CreateInspectorGUI()
+//     {
+//         var root = new VisualElement();
+//
+//         var label = new Label("This is a label");
+//         root.Add(label);
+//
+//         var button = new Button(() => Debug.Log("Button pressed"));
+//         button.text = "Click me";
+//         root.Add(button);
+//
+//         return root;
+//     }
+// }
